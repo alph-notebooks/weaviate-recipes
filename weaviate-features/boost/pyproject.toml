@@ -1,0 +1,13 @@
+[project]
+name = "boost-recipe"
+version = "0.1.0"
+description = "Weaviate Boost recipe using Amazon Products dataset"
+requires-python = ">=3.10"
+dependencies = [
+    "weaviate-client @ git+https://github.com/weaviate/weaviate-python-client.git@feature/boost",
+    "datasets",
+    "huggingface-hub",
+    "rich",
+    "openai",
+    "fastapi[standard]",
+]
