@@ -1,0 +1,185 @@
+Returning 10 results per query
+Embedding query: 'calculator'...
+Collection 'AmazonProduct' has 81374 objects
+
+================================================================================
+  Baseline: vector search 'calculator' (no boost)
+================================================================================
+   1. [dist=0.5303] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [dist=0.5371] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   3. [dist=0.5486] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   4. [dist=0.5499] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   5. [dist=0.5624] $6.99     rating=4.2  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   6. [dist=0.5998] $9.99     rating=4.3  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+   7. [dist=0.6039] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   8. [dist=0.6048] $85.68    rating=4.7  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   9. [dist=0.6167] $9.99     rating=4.0  PHONEX Tally Counter Clicker: Digital Finger Counter Tasbeeh
+  10. [dist=0.6208] $9.99     rating=4.2  Math Punch Digital Roller, Smart Math Roller Stamps for Kids
+
+================================================================================
+  Boost: prefer highly rated products (rating >= 4.9)
+================================================================================
+   1. [dist=0.7171] $12.99    rating=5.0  DC 0-300V 0-100A Voltmeter Ammeter 12V 24V 48V Car Battery T
+   2. [dist=0.7111] $19.99    rating=5.0  7pcs Metric Ruler Multifunctional Sewing Ruler French Curve 
+   3. [dist=0.6039] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   4. [dist=0.6946] $12.51    rating=5.0  Hourmeter, Multi‑Functional Hour Gauge Quartz High‑Accuracy 
+   5. [dist=0.6693] $33.95    rating=5.0  Anytime Tools Dial Caliper 6"/0.001" Precision Shock Proof S
+   6. [dist=0.7139] $479.95   rating=5.0  ZR15s OBD2 Code Reader with 3.5 in. Display and Active Test/
+   7. [dist=0.6772] $35.96    rating=5.0  TAPHET Electronic Digital Dial Indicator Mini Dial Indicator
+   8. [dist=0.7046] $8.95     rating=4.9  24 Pack Check Registers for Personal Checkbook, Easy to Read
+   9. [dist=0.5499] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+  10. [dist=0.7177] $14.99    rating=5.0  BATAUU Best Pedometer, Simply Operation Walking Running Pedo
+
+================================================================================
+  Boost: prefer affordable products ($10-$50), weight=0.8
+================================================================================
+   1. [dist=0.5303] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [dist=0.6039] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   3. [dist=0.6665] $40.99    rating=4.1  BTMETER AC/DC 1000A Clamp Multimeter, 4000 Counts Digital Cl
+   4. [dist=0.6693] $33.95    rating=5.0  Anytime Tools Dial Caliper 6"/0.001" Precision Shock Proof S
+   5. [dist=0.6712] $16.99    rating=3.9  ASR Outdoor Gold Panning Nugget Electronic Pocket Scale, 5-U
+   6. [dist=0.6723] $15.99    rating=3.8  Speed Timer,Touch Control Timer,Professional Timer Machine w
+   7. [dist=0.6751] $15.99    rating=4.2  Digital Kitchen Food Scale, 22 lb 10 KG Conzy Multifunction 
+   8. [dist=0.6772] $35.96    rating=5.0  TAPHET Electronic Digital Dial Indicator Mini Dial Indicator
+   9. [dist=0.6779] $15.97    rating=3.5  Screen Auto Clicker For Phone:3 Speed Physical Tapper, Simul
+  10. [dist=0.6782] $18.69    rating=4.6  hand2mind Hammerhead Number Hunt! Math Game, Addition and Su
+
+================================================================================
+  Decay: prefer products priced near $20 (exp, scale=2)
+================================================================================
+   1. [dist=0.5303] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [dist=0.6885] $19.99    rating=4.7  Newton Cradle Decoration for Office， Teaching Tool for Physi
+   3. [dist=0.7033] $19.99    rating=4.4  EPOMAKER CIDOO Wrist Rest, Ergonomic Keyboard Palm Rest Pad 
+   4. [dist=0.7084] $19.99    rating=3.1  BATAUU Fitness Tracker, 3D Digital Watch Pedometer for Walki
+   5. [dist=0.7084] $19.99    rating=3.3  BATAUU Fitness Tracker, 3D Digital Watch Pedometer for Walki
+   6. [dist=0.7111] $19.99    rating=5.0  7pcs Metric Ruler Multifunctional Sewing Ruler French Curve 
+   7. [dist=0.7121] $19.99    rating=5.0  A1 Fully Automatic Anti-Burn Intelligent Digital Multimeter,
+   8. [dist=0.7166] $19.99    rating=4.5  MQSUZA Quite Wired Keyboards for Windows PC Laptop Desktop M
+   9. [dist=0.6782] $18.69    rating=4.6  hand2mind Hammerhead Number Hunt! Math Game, Addition and Su
+  10. [dist=0.7106] $17.99    rating=2.4  SmartHeart Analog Body Weight Scale | Mechanical Scale | 286
+
+================================================================================
+  Decay: prefer top-rated products (linear, origin=5.0)
+================================================================================
+   1. [dist=0.5303] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [dist=0.5499] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   3. [dist=0.6039] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   4. [dist=0.5371] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   5. [dist=0.5486] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   6. [dist=0.6048] $85.68    rating=4.7  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   7. [dist=0.6693] $33.95    rating=5.0  Anytime Tools Dial Caliper 6"/0.001" Precision Shock Proof S
+   8. [dist=0.5624] $6.99     rating=4.2  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   9. [dist=0.6772] $35.96    rating=5.0  TAPHET Electronic Digital Dial Indicator Mini Dial Indicator
+  10. [dist=0.6853] $11.99    rating=5.0  Kitchen Scale Food Baking Mechanical Dial Compact Bowl Cook 
+
+================================================================================
+  Blend: highly rated (weight=2) + price near $30 (decay)
+================================================================================
+   1. [dist=0.5303] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [dist=0.5371] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   3. [dist=0.5486] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   4. [dist=0.5499] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   5. [dist=0.5624] $6.99     rating=4.2  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   6. [dist=0.6039] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   7. [dist=0.5998] $9.99     rating=4.3  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+   8. [dist=0.6167] $9.99     rating=4.0  PHONEX Tally Counter Clicker: Digital Finger Counter Tasbeeh
+   9. [dist=0.6208] $9.99     rating=4.2  Math Punch Digital Roller, Smart Math Roller Stamps for Kids
+  10. [dist=0.6693] $33.95    rating=5.0  Anytime Tools Dial Caliper 6"/0.001" Precision Shock Proof S
+
+================================================================================
+  Time decay: prefer products near 2023-01-01 (exp, scale=200d)
+================================================================================
+   1. [dist=0.5371] $5.09     rating=4.5 date=2023-03-01  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   2. [dist=0.6167] $9.99     rating=4.0 date=2023-01-29  PHONEX Tally Counter Clicker: Digital Finger Counter Tasbeeh
+   3. [dist=0.5303] $19.99    rating=5.0 date=2023-04-25  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   4. [dist=0.5624] $6.99     rating=4.2 date=2023-03-29  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   5. [dist=0.6782] $18.69    rating=4.6 date=2023-01-05  hand2mind Hammerhead Number Hunt! Math Game, Addition and Su
+   6. [dist=0.6048] $85.68    rating=4.7 date=2023-03-05  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   7. [dist=0.6969] $44.55    rating=2.0 date=2023-01-01  TapNset Professional Chess Clock (Touch Sensors, Blue)
+   8. [dist=0.6693] $33.95    rating=5.0 date=2023-01-22  Anytime Tools Dial Caliper 6"/0.001" Precision Shock Proof S
+   9. [dist=0.6968] $29.99    rating=3.7 date=2023-01-04  Multi-function Foldable Level, 23 Inch Multi-Angle Measureme
+  10. [dist=0.6990] $59.99    rating=4.0 date=2023-01-03  CeRaBuRET Flipping Out Wall and Tabletop Flip Clock, Battery
+
+================================================================================
+  Property: rank by rating_number (log1p)
+================================================================================
+   1. [dist=0.6048] $85.68    rating=4.7 reviews=8659  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   2. [dist=0.7033] $17.5     rating=4.8 reviews=1453  2 Pack Dry Erase Multiplication Chart Whiteboard 9" x 12" Mu
+   3. [dist=0.6665] $40.99    rating=4.1 reviews=698  BTMETER AC/DC 1000A Clamp Multimeter, 4000 Counts Digital Cl
+   4. [dist=0.5371] $5.09     rating=4.5 reviews=26  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   5. [dist=0.5486] $7.99     rating=4.5 reviews=29  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   6. [dist=0.6971] $71.99    rating=4.5 reviews=378  NEIKO 01409A 12” Electronic Digital Caliper | Extra Large Di
+   7. [dist=0.7166] $19.99    rating=4.5 reviews=534  MQSUZA Quite Wired Keyboards for Windows PC Laptop Desktop M
+   8. [dist=0.5624] $6.99     rating=4.2 reviews=27  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   9. [dist=0.6603] $6.99     rating=4.5 reviews=147  JEDELEOS TI84 USB Cable for Texas Instruments Calculator, TI
+  10. [dist=0.7112] $36.99    rating=4.7 reviews=217  Nut and Bolt Thread Checker (Red & Blue) Nut and Bolt Size G
+
+================================================================================
+  Blend: boost rating >= 4.0 (weight=2) + popularity (log1p)
+================================================================================
+   1. [dist=0.6048] $85.68    rating=4.7 reviews=8659  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   2. [dist=0.5371] $5.09     rating=4.5 reviews=26  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   3. [dist=0.5486] $7.99     rating=4.5 reviews=29  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   4. [dist=0.5624] $6.99     rating=4.2 reviews=27  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   5. [dist=0.6665] $40.99    rating=4.1 reviews=698  BTMETER AC/DC 1000A Clamp Multimeter, 4000 Counts Digital Cl
+   6. [dist=0.7033] $17.5     rating=4.8 reviews=1453  2 Pack Dry Erase Multiplication Chart Whiteboard 9" x 12" Mu
+   7. [dist=0.5499] $7.59     rating=5.0 reviews=4  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   8. [dist=0.5303] $19.99    rating=5.0 reviews=1  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   9. [dist=0.6603] $6.99     rating=4.5 reviews=147  JEDELEOS TI84 USB Cable for Texas Instruments Calculator, TI
+  10. [dist=0.5998] $9.99     rating=4.3 reviews=18  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+
+================================================================================
+  BM25 'calculator' (no boost)
+================================================================================
+   1. [score=12.4757] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [score=11.4586] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   3. [score=11.0602] $85.68    rating=4.7  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   4. [score=11.0069] $9.99     rating=4.3  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+   5. [score=10.8370] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   6. [score=10.7906] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   7. [score=10.6623] $7.99     rating=4.5  3Ft USB Power Charger Cable Wall Ac Adapter for Texas Instru
+   8. [score=10.1428] $69.99    rating=4.4  TI 83 Plus Graphing Calculator with Guerrilla Military Grade
+   9. [score=10.1274] $6.99     rating=4.5  JEDELEOS TI84 USB Cable for Texas Instruments Calculator, TI
+  10. [score=9.5899] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+
+================================================================================
+  BM25 'calculator' + boost rating >= 4.9
+================================================================================
+   1. [score=1.0000] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [score=0.9347] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   3. [score=0.8850] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   4. [score=0.6136] $39.99    rating=4.9  Smart Watch for Men Women(Make/Answer Call),Updated 1.9" Fit
+   5. [score=0.6000] $239.99   rating=4.9  HITY GT4 MAX Smart Watch for Android/iOS,Dual-Band GPS,AI Bu
+   6. [score=0.3595] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   7. [score=0.3436] $85.68    rating=4.7  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   8. [score=0.3415] $9.99     rating=4.3  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+   9. [score=0.3329] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+  10. [score=0.3277] $7.99     rating=4.5  3Ft USB Power Charger Cable Wall Ac Adapter for Texas Instru
+
+================================================================================
+  Hybrid 'calculator' (no boost)
+================================================================================
+   1. [score=1.0000] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [score=0.9446] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   3. [score=0.8818] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   4. [score=0.8409] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   5. [score=0.7529] $6.99     rating=4.2  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   6. [score=0.6979] $9.99     rating=4.3  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+   7. [score=0.6808] $85.68    rating=4.7  New Casio FX-991CW Advanced Scientific Calculator (UK Versio
+   8. [score=0.6775] $24.99    rating=5.0  Clear Silver Acrylic Solar Power Calculator by DS DRAYMOND S
+   9. [score=0.5155] $7.99     rating=4.5  3Ft USB Power Charger Cable Wall Ac Adapter for Texas Instru
+  10. [score=0.4468] $6.99     rating=4.5  JEDELEOS TI84 USB Cable for Texas Instruments Calculator, TI
+
+================================================================================
+  Hybrid 'calculator' + boost price < $20
+================================================================================
+   1. [score=1.0000] $19.99    rating=5.0  2 Pack Scientific Calculator Statistic Fractions Chemistry M
+   2. [score=0.9776] $5.09     rating=4.5  Office Calculator for Desk, 12 Digit Big Button Mechanical C
+   3. [score=0.9523] $7.99     rating=4.5  Calculator Small 12 Digit, Basic Desk Calculator with Large 
+   4. [score=0.9357] $7.59     rating=5.0  Scwopeuer Foldable Soft Silicone Handheld Scientific Solar C
+   5. [score=0.9002] $6.99     rating=4.2  Desktop Calculator 12 Digit, Large LCD Display and Sensitive
+   6. [score=0.8780] $9.99     rating=4.3  Podokas Rose Gold Calculator, 10 Digits Dual Power Basic Off
+   7. [score=0.8043] $7.99     rating=4.5  3Ft USB Power Charger Cable Wall Ac Adapter for Texas Instru
+   8. [score=0.7766] $6.99     rating=4.5  JEDELEOS TI84 USB Cable for Texas Instruments Calculator, TI
+   9. [score=0.7492] $9.99     rating=4.0  PHONEX Tally Counter Clicker: Digital Finger Counter Tasbeeh
+  10. [score=0.7429] $9.99     rating=4.2  Math Punch Digital Roller, Smart Math Roller Stamps for Kids
